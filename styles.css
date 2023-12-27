@@ -1,0 +1,40 @@
+body {
+    margin: 0 ;
+    filter: brightness(0);
+    filter: contrast(100%);
+}
+
+canvas {
+    background: linear-gradient(-45deg, #1e1e2e, #2c010c, #131420, #04503e);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+    filter: brightness(.25);
+    filter: contrast(120%);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#iframe {
+    position: absolute;
+    opacity: 0.1;
+    bottom:0;
+    width: 200px;
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+
+#iframe:hover {
+    opacity: 1;
+    width: 500px;
+    height: 300px;
+}
